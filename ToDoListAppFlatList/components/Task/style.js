@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
   },
   content: {
     width: "80%",
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: "bold"
   },
 });
 
