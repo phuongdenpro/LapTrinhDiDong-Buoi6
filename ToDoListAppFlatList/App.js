@@ -9,6 +9,7 @@ import {
   ScrollView,
   Alert,
   FlatList,
+  SafeAreaView,
 } from "react-native";
 import Task from "./components/Task";
 import styles from "./App.components.style";
@@ -33,7 +34,7 @@ const App = () => {
     ]);
   };
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.body}>
         <Text style={styles.header}>Todo List</Text>
         <FlatList
@@ -51,7 +52,7 @@ const App = () => {
       <Form onAddTask={handleAddTask} />
 
       <StatusBar style="dark" />
-    </View>
+    </SafeAreaView>
   );
 };
 
